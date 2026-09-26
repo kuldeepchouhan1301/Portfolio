@@ -54,6 +54,7 @@ export default function Contact() {
     const templateParams = {
       from_name: formData.name.trim(),
       from_email: formData.email.trim(),
+      reply_to: formData.email.trim(),
       subject: formData.subject.trim() || `Portfolio Contact from ${formData.name.trim()}`,
       message: formData.message.trim(),
     };
